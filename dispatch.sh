@@ -5,7 +5,7 @@
 
 export YOUR_TOKEN=""
 
-curl -L \
+curl -v -L \
   -X POST \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer $YOUR_TOKEN" \
