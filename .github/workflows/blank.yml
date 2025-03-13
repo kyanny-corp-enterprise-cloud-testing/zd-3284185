@@ -1,0 +1,11 @@
+name: Main workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  dosometing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo This workflow is being ran with the ${{ github.ref_name }} branch.
